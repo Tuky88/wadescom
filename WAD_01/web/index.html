@@ -9,8 +9,48 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/estilo.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <div>TODO write content</div>
+        <fieldset>
+            <legend>Tabla de Multiplicar</legend>
+            <form method="post" action="TablaDeMultiplicarServlet">
+                <table>
+                    <tr>
+                        <td>
+                            Valor Inicial
+                        </td>
+                        <td>
+                            <input id="valorInicial" 
+                                   name="valorInicial"
+                                   type="number" 
+                                   step="1" 
+                                   value="1"
+                                   required="required" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="valorFinal">
+                                valorFinal
+                            </label>
+                        </td>
+                        <td>
+                            <input id="valorFinal" 
+                                   name="valorFinal"
+                                   type="number" 
+                                   step="1" 
+                                   value="10"
+                                   required="required" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" >
+                            <input id="boton" type="submit" value="Enviar" />
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
     </body>
 </html>

@@ -35,10 +35,27 @@ public class TablaDeMultiplicarServlet extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet TablaDeMultiplicarServlet</title>");            
+            out.println("<title>Servlet TablaDeMultiplicarServlet</title>");   
+            out.println("<link href=\"css/estilo.css\" rel=\"stylesheet\" type=\"text/css\"/>");   
+            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet TablaDeMultiplicarServlet at " + request.getContextPath() + "</h1>");
+             
+            out.println("<b> Tabla de Multiplicar generarda entre Vo : " 
+                    + request.getParameter("valorInicial") 
+                    + " Vf : " 
+                    + request.getParameter("valorFinal") );
+            out.println("<table>");
+            for (int i = Integer.parseInt(request.getParameter("valorInicial")); i <= Integer.parseInt(request.getParameter("valorFinal")); i++) {
+                out.println("<tr>");
+                for (int j = Integer.parseInt(request.getParameter("valorInicial")); j <= Integer.parseInt(request.getParameter("valorFinal")); j++) {
+                    out.println("<td class=\"celda\">" + (i * j) + "</td>");
+                }
+                out.println("</tr>");
+            }
+            
+            out.println("</table>");
+            
             out.println("</body>");
             out.println("</html>");
         }
