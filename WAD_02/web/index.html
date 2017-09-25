@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/estilo.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+    <center>
+        <fieldset>
+            <legend>Registro de Articulos</legend>
+            <form method="post" action="ArticuloServlet">
+                <table>
+                    <tr>
+                        <td>
+                            Clave Articulo
+                        </td>
+                        <td>
+                            <input id="txtClaveArticulo" 
+                                   name="txtClaveArticulo"
+                                   type="number" 
+                                   step="1" 
+                                   value="1"
+                                   required="required" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="txtDescripcionArticulo">
+                                Descripcion Articulo
+                            </label>
+                        </td>
+                        <td>
+                            <input id="txtDescripcionArticulo" 
+                                   name="txtDescripcionArticulo"
+                                   type="text" 
+                                   placeholder="Descripción del Articulo"
+                                   required="required" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="txtPrecio">
+                                Precio del Articulo
+                            </label>
+                        </td>
+                        <td>
+                            <input id="txtPrecio" 
+                                   name="txtPrecio"
+                                   type="text" 
+                                   value="50"
+                                   required="required" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="txtExistencia">
+                                Existencias Articulo
+                            </label>
+                        </td>
+                        <td>
+                            <input id="txtExistencia" 
+                                   name="txtExistencia"
+                                   type="number" 
+                                   min="1"
+                                   max="500"
+                                   value="10"
+                                   required="required" 
+                                   />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" >
+                            <input id="boton" type="submit" value="Enviar" />
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
+    </center>
+</body>
+</html>
