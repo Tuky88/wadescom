@@ -1,0 +1,62 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25-sep-2017, 13:00:11
+    Author     : darkmac
+*/
+
+#boton{
+    text-align: center;
+    border-radius: 19px 19px 19px 19px;
+    -moz-border-radius: 19px 19px 19px 19px;
+    -webkit-border-radius: 19px 19px 19px 19px;
+    border: 4px solid #52bce3;
+}
+.boton{
+    text-align: center;
+    border-radius: 19px 19px 19px 19px;
+    -moz-border-radius: 19px 19px 19px 19px;
+    -webkit-border-radius: 19px 19px 19px 19px;
+    border: 1px solid #52bce3;
+}
+
+td{
+    text-align:center;
+    width:300px;
+}
+.celda{
+    text-align:center;
+    width:300px;
+    border:1px solid darkblue;
+    width:300px;
+}
+
+number{
+    border-radius: 19px 19px 19px 19px;
+    -moz-border-radius: 19px 19px 19px 19px;
+    -webkit-border-radius: 19px 19px 19px 19px;
+    border-color:darkblue ;
+}
+
+fieldset { 
+    width:   300px;
+    height: auto;
+    border-radius: 19px 19px 19px 19px;
+    -moz-border-radius: 19px 19px 19px 19px;
+    -webkit-border-radius: 19px 19px 19px 19px;
+    border-color:darkblue ;
+}
+
+legend {
+    padding: 0.2em 0.5em;
+    border:1px solid green;
+    border-radius: 19px 19px 19px 19px;
+    -moz-border-radius: 19px 19px 19px 19px;
+    -webkit-border-radius: 19px 19px 19px 19px;
+    color:green;
+    font-size:90%;
+    text-align:left;
+}
